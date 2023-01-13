@@ -6,7 +6,7 @@ export default function Video() {
       <L.Container>
         <div className="block lg:flex justify-center gap-4 py-8">
           <div className="w-full lg:w-1/2 lg:p-3">
-            <video className="w-full" controls>
+            <video className="w-full rounded-2xl shadow-xl" controls>
               <source src="your_video's_name.mp4" type="video/mp4" />
               Error Message
             </video>

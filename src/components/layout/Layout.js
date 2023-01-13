@@ -2,8 +2,12 @@ function Fluid({ children }) {
   return <div className="w-full py-6">{children}</div>;
 }
 
-export function Container({ children }) {
-  return <div className="max-w-screen-xl mx-auto px-4">{children}</div>;
+export function Container({ children, className = "" }) {
+  return (
+    <div className={"max-w-screen-xl mx-auto px-4 " + className}>
+      {children}
+    </div>
+  );
 }
 
 export function Banner({ src }) {
@@ -24,11 +28,11 @@ export function ProductTitle({ children }) {
   );
 }
 
-function Title({ children, className }) {
+function Title({ children, className = "" }) {
   return (
     <div
       className={
-        "text-center w-full py-3 text-3xl lg:text-3xl font-semibold uppercase text-navy " +
+        "text-center w-full py-3 text-2xl lg:text-3xl font-semibold uppercase text-navy " +
         className
       }
     >
@@ -37,15 +41,20 @@ function Title({ children, className }) {
   );
 }
 
-export function Row({ children }) {
+export function Row({ children, className = "" }) {
   return (
-    <div className="flex items-center justify-evenly flex-wrap gap-5 w-full py-5">
+    <div
+      className={
+        "flex items-center justify-evenly flex-wrap gap-5 w-full py-5 " +
+        className
+      }
+    >
       {children}
     </div>
   );
 }
 
-export function Desc({ children, className }) {
+export function Desc({ children, className = "" }) {
   return (
     <div
       className={

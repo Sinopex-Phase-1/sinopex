@@ -80,12 +80,15 @@ export default function NewArrivals() {
   );
 }
 
-export const Card = () => (
-  <div className="flex flex-col items-start bg-white max-w-[290px] w-56">
+export const Card = ({ href = "/" }) => (
+  <a
+    href={href}
+    className="flex flex-col items-start bg-white max-w-[290px] w-56"
+  >
     <div className="flex items-center w-full aspect-square bg-alice-blue rounded-xl overflow-hidden"></div>
     <div className="flex flex-col p-4 text-start">
       <div className="lg:text-lg font-medium text-navy">Product Name</div>
       <div className="font-medium text-red-700">$399.00</div>
     </div>
-  </div>
+  </a>
 );

@@ -20,7 +20,7 @@ const categories = [
 
 export default function Category() {
   // set false by default
-  const [category, setcategory] = useState(true);
+  const [category, setcategory] = useState(false);
   function handleCategory() {
     setcategory(!category);
   }

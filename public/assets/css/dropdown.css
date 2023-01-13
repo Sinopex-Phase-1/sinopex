@@ -1,0 +1,29 @@
+.parent-1:hover .dropdown-child-1 {
+    display: block;
+    animation: drop-up 120ms ease-in forwards;
+}
+
+@keyframes drop-up {
+    0% {
+        transform: translateY(24px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.parent-2:hover .dropdown-child-2 {
+    display: block;
+    animation: drop-right 150ms ease-in forwards;
+}
+
+@keyframes drop-right {
+    0% {
+        transform: translateX(-24px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}

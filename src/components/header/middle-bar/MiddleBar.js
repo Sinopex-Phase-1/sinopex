@@ -4,7 +4,7 @@ import Fluid, { Container, Row } from "../../layout/Layout";
 export default function MiddleBar() {
   return (
     <Container>
-      <div className="flex justify-between items-center py-2">
+      <div className="flex justify-between items-center py-3 lg:py-5">
         <Logo></Logo>
         <div className="flex gap-2">
           <Icon to="">

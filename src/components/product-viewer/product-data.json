@@ -1,0 +1,11 @@
+{
+  "name": "product name",
+  "price": "399.00",
+  "brand": "Xiaomi",
+  "category": "Accessories",
+  "desc": "Exporter all Kinds of New and Recondition Construction Equipment Vehicle \nWe are specialized in supply of New, Used and Re-usable all kinds of ship spare and equipment, Provide Manufacturing, Rebuilding, Erection Services for Generators, Boiler, Industrial Machinery, Plants.",
+  "table": [
+    ["property", "property", "property", "property", "property"],
+    ["value", "value", "value", "value", "value"]
+  ]
+}
