@@ -14,7 +14,7 @@ function Product() {
   const id = new URLSearchParams(url.search).get("id");
   let data = allData.filter((e) => e.model === id);
   data = data[0];
-  console.log(data);
+  // console.log(data);
 
   if (!data) return;
 

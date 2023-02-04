@@ -45,7 +45,7 @@ export function Row({ children, className = "" }) {
   return (
     <div
       className={
-        "flex items-center justify-evenly flex-wrap gap-5 w-full py-5 " +
+        "flex items-center justify-center flex-wrap gap-5 w-full py-5 " +
         className
       }
     >

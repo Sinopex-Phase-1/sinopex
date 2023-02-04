@@ -27,7 +27,7 @@ export default function Beg({ children }) {
       <L.Fluid>
         <L.Container>
           <Banner src={banner}></Banner>
-          <L.Title>Beg</L.Title>
+          {/* <L.Title>Beg</L.Title> */}
           <L.Row>
             {data.map((e, i) => {
               if (i < 8) {

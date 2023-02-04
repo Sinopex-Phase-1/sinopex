@@ -12,7 +12,7 @@ export function Card({ children, href = "/" }) {
 export function Image({ src = "" }) {
   return (
     <img
-      className="flex items-center w-full h-full aspect-square bg-white p-8"
+      className="flex items-center w-full h-80 aspect-square bg-white p-8"
       src={src}
       alt={"product:" + src}
     />

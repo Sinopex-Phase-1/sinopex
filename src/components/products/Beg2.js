@@ -28,10 +28,10 @@ export default function Beg({ children }) {
       <L.Fluid>
         <L.Container>
           <Banner src={banner}></Banner>
-          <L.Title>Beg</L.Title>
+          {/* <L.Title>Beg</L.Title> */}
           <L.Row>
             {data.map((e, i) => {
-              if (16 < i && i < 25) {
+              if (14 < i && i < 23) {
                 return (
                   <P.Card key={i} href={"/product?id=" + e?.model}>
                     <P.Image
