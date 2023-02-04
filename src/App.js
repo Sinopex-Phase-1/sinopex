@@ -28,7 +28,6 @@ export default function App() {
       })
       .then((data) => {
         setres(data.data);
-        // console.log(data.data);
       })
       .catch((err) => {
         console.log(err);

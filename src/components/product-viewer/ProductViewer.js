@@ -15,7 +15,6 @@ function ProductViewer({ data, children = "" }) {
 
   // let data = allData.filter((e) => e.model === id);
   // data = data[0];
-  // // console.log(data);
 
   // if (!data) return;
 
