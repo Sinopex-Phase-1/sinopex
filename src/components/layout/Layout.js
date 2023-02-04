@@ -13,7 +13,7 @@ export function Container({ children, className = "" }) {
 export function Banner({ src }) {
   return (
     <img
-      className="w-full h-80 lg:h-96 rounded-2xl bg-white overflow-hidden shadow-md"
+      className="w-full h-48 lg:h-[460px] rounded-2xl bg-white overflow-hidden shadow-md object-cover"
       src={src}
       alt={src}
     />

@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./router/Routes";
-import { ProductContext } from "./context/Product";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-export default function App() {
+export default function Product() {
   const [res, setres] = useState([
     { name: "product name", price: "399.00" },
     { name: "product name", price: "399.00" },
@@ -17,7 +15,6 @@ export default function App() {
 
   async function getData() {
     const url = "https://henxing.up.railway.app/api/v1/products";
-    // "https://henxing.up.railway.app/uploads/files/file-1674437720676.png" Image url
 
     await fetch(url)
       .then((res) => {
@@ -27,8 +24,7 @@ export default function App() {
         throw res;
       })
       .then((data) => {
-        setres(data.data);
-        // console.log(data.data);
+        setres(data);
       })
       .catch((err) => {
         console.log(err);
@@ -39,9 +35,5 @@ export default function App() {
     getData();
   }, []);
 
-  return (
-    <ProductContext.Provider value={res}>
-      <RouterProvider router={router}></RouterProvider>
-    </ProductContext.Provider>
-  );
+  return res;
 }

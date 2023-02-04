@@ -21,7 +21,7 @@ export default function CompanyProfile({ children }) {
                 className="w-full aspect-square bg-white rounded-xl shadow-md"
               />
             </div>
-            <div className="w-full lg:w-1/2 flex flex-col gap-4">
+            <div className="w-full lg:w-1/2 flex flex-col gap-4 pt-4 lg:pt-0">
               <div className="flex justify-center gap-4">
                 <div className="w-full lg:w-1/2">
                   <img
